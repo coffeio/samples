@@ -1,0 +1,22 @@
+<meta charset = utf-8>
+
+<script src="jquery-latest.js"></script>
+<script src="socket.io.js"></script>
+<script src="COFFEmask.js"></script>
+
+SESSION ID<input id="session" value="ASDASDASDASD123123!AAAAA"/>
+<button onClick="auth(false)">auth Chrome</button>
+<button onClick="auth(true)">auth desktop</button>
+<hr>
+TRX DATA<input id="transaction" value='{"account":"eosio.token","name":"transfer","data":{"from":"rionass1ffor","memo":"","quantity":"1.0000 CFF","to":"coffe"}}' style="width:90%"/>
+<br>
+<button onClick="transaction(false)">transaction Chrome</button>
+<button onClick="transaction(true)">transaction desktop</button>
+<hr>
+<hr>
+SMART CONTRACT DATA<input id="transaction_smart" value='{"account":"dappsunity3d","name":"injectdata","data":{"from":"rionass1ffor","value":"TEST ONE val"}}' style="width:90%"/>
+<br>
+<button onClick="transaction_smart(false)">transaction Chrome</button>
+<button onClick="transaction_smart(true)">transaction desktop</button>
+<hr>
+<div id="result"></div>
